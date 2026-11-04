@@ -1,0 +1,16 @@
+[project]
+name = "contrast-palette-audit"
+version = "0.1.0"
+description = "Offline sRGB color pair contrast reports for design systems, with a dependency-free Python API and JSON CLI."
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+contrast-palette-audit = "contrast_palette_audit.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
